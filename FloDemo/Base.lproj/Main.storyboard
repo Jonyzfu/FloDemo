@@ -25,12 +25,36 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZN-ml-Ahk" customClass="PushButtonView" customModule="FloDemo" customModuleProvider="target">
+                                <rect key="frame" x="275" y="480" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Ri-90-CFg"/>
+                                    <constraint firstAttribute="width" constant="50" id="Jxy-rM-6MS"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="sZN-ml-Ahk" secondAttribute="centerX" id="6H8-9z-KCh"/>
                             <constraint firstAttribute="centerX" secondItem="aNg-v6-KKE" secondAttribute="centerX" id="SLW-Ba-44A"/>
                             <constraint firstAttribute="centerY" secondItem="aNg-v6-KKE" secondAttribute="centerY" constant="-100" id="TuP-h7-xmA"/>
+                            <constraint firstItem="sZN-ml-Ahk" firstAttribute="top" secondItem="aNg-v6-KKE" secondAttribute="bottom" constant="30" id="mO9-PX-STs"/>
                         </constraints>
                     </view>
                 </viewController>
