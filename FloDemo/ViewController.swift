@@ -8,8 +8,13 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
+    @IBOutlet var counterView: CounterView!
+    @IBOutlet weak var counterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +24,20 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func btnPushButton(sender: PushButtonView) {
+        if sender.isAddButton {
+            counterView.counter++
+        } else {
+            if counterView.counter > 0 {
+                counterView.counter--
+            }
+        }
+        counterLabel.text = (String)(counterView.counter)
+    }
+    
+
+    
 
 
 }

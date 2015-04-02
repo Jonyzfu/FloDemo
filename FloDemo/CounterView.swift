@@ -14,7 +14,14 @@ let π: CGFloat = (CGFloat)(M_PI)
 @IBDesignable
 class CounterView: UIView {
 
-    @IBInspectable var counter: Int = 2
+    @IBInspectable var counter: Int = 5 {
+        didSet {
+            if counter <= NoOfGlasses {
+                // the view needs to be refreshed
+                setNeedsDisplay()
+            }
+        }
+    }
     @IBInspectable var outlineColor: UIColor = UIColor.blueColor()
     @IBInspectable var counterColor: UIColor = UIColor.orangeColor()
     // Only override drawRect: if you perform custom drawing.
