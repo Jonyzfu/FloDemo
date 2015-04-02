@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7218351ACD01ED00A4E071 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7218341ACD01ED00A4E071 /* CounterView.swift */; };
 		6E73EA111AC679DD00C1B819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E73EA101AC679DD00C1B819 /* AppDelegate.swift */; };
 		6E73EA131AC679DE00C1B819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E73EA121AC679DE00C1B819 /* ViewController.swift */; };
 		6E73EA161AC679DE00C1B819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E73EA141AC679DE00C1B819 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E7218341ACD01ED00A4E071 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		6E73EA0B1AC679DB00C1B819 /* FloDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E73EA0F1AC679DC00C1B819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E73EA101AC679DD00C1B819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				6E73EA101AC679DD00C1B819 /* AppDelegate.swift */,
 				6E73EA301AC680FC00C1B819 /* PushButtonView.swift */,
+				6E7218341ACD01ED00A4E071 /* CounterView.swift */,
 				6E73EA121AC679DE00C1B819 /* ViewController.swift */,
 				6E73EA141AC679DE00C1B819 /* Main.storyboard */,
 				6E73EA171AC679DE00C1B819 /* Images.xcassets */,
@@ -218,6 +221,7 @@
 				6E73EA131AC679DE00C1B819 /* ViewController.swift in Sources */,
 				6E73EA311AC680FC00C1B819 /* PushButtonView.swift in Sources */,
 				6E73EA111AC679DD00C1B819 /* AppDelegate.swift in Sources */,
+				6E7218351ACD01ED00A4E071 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				6E73EA2C1AC679DF00C1B819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E73EA2D1AC679DF00C1B819 /* Build configuration list for PBXNativeTarget "FloDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				6E73EA2F1AC679DF00C1B819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
