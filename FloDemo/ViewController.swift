@@ -8,12 +8,14 @@
 
 import UIKit
 
-
+var isGraphViewShowing = false
 
 class ViewController: UIViewController {
 
     @IBOutlet var counterView: CounterView!
     @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var graphView: GraphView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +29,41 @@ class ViewController: UIViewController {
     
     @IBAction func btnPushButton(sender: PushButtonView) {
         if sender.isAddButton {
-            counterView.counter++
+            if counterView.counter < 8 {
+                counterView.counter++
+            }
         } else {
             if counterView.counter > 0 {
                 counterView.counter--
             }
         }
         counterLabel.text = (String)(counterView.counter)
+        if (isGraphViewShowing) {
+            // counterViewTap(nil)
+        }
     }
     
 
+    @IBAction func counterViewTap(sender: UITapGestureRecognizer) {
+        if (isGraphViewShowing) {
+            // hide graph
+            UIView.transitionFromView(graphView,
+                toView: counterView,
+                duration: 1.0,
+                options: UIViewAnimationOptions.TransitionFlipFromLeft
+                | UIViewAnimationOptions.ShowHideTransitionViews,
+                completion: nil)
+        } else {
+            // show graph
+            UIView.transitionFromView(counterView,
+                toView: graphView,
+                duration: 1.0,
+                options: UIViewAnimationOptions.TransitionFlipFromRight
+                    | UIViewAnimationOptions.ShowHideTransitionViews,
+                completion: nil)
+        }
+        isGraphViewShowing = !isGraphViewShowing
+    }
     
 
 
